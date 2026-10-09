@@ -1,0 +1,301 @@
+{
+  "common": {
+    "appName": "Fuel Relief",
+    "appSubtitle": "Assistant Pakistan",
+    "lightMode": "Light mode",
+    "darkMode": "Dark mode",
+    "language": "Language",
+    "urduSupportAvailable": "Urdu support available",
+    "urduSupportNote": "آپ اپنی زبان میں مدد لے سکتے ہیں",
+    "send": "Send",
+    "clear": "Clear",
+    "back": "Back",
+    "loading": "One moment…",
+    "recent": "Recent",
+    "empty": "Nothing here yet.",
+    "disclaimerShort": "Guidance only — not connected to official government databases.",
+    "guestAnswer": "Guest"
+  },
+  "nav": {
+    "home": "Home",
+    "helpCenter": "Help Center",
+    "faqs": "FAQs",
+    "contact": "Contact"
+  },
+  "announcements": {
+    "a1": "This platform offers guidance only. It is not a government service and cannot register you.",
+    "a2": "New: read step-by-step help in Urdu, Pashto and Punjabi — switch language from the top bar.",
+    "a3": "Having trouble with an SMS rejection? Try the Rejection Help tool below.",
+    "a4": "Your searches and checks stay on this device only. Nothing is sent anywhere."
+  },
+  "hero": {
+    "eyebrow": "A little help, right away",
+    "titlePrefix": "Let's find the",
+    "titleHighlight": "right next step",
+    "titleSuffix": "for you.",
+    "subtitle": "Welcome. We explain fuel relief in plain language and help you move forward — one small question at a time.",
+    "badgeTrust": "Clear guidance for citizens, families and communities",
+    "panelKicker": "Friendly help desk",
+    "panelLine1": "Speak or type — we'll guide you",
+    "panelLine2": "No complicated words, no waiting on hold"
+  },
+  "home": {
+    "helpCenterEyebrow": "Help center",
+    "helpCenterTitle": "What would you like help with?",
+    "helpCenterSubtitle": "Choose one option. You do not need to know the right words — we will guide you.",
+    "goodToKnowEyebrow": "Good to know",
+    "goodToKnowTitle": "Questions are welcome here.",
+    "goodToKnowSubtitle": "Search for a quick answer, or open a question to read a little more. Nothing is hidden behind complicated words.",
+    "seeAllFaqs": "See all FAQs"
+  },
+  "cards": {
+    "validate": { "title": "Validate My Registration Information", "desc": "Check the details you gave us" },
+    "eligibility": { "title": "Am I Eligible?", "desc": "Answer a few easy questions" },
+    "rejection": { "title": "Why Was My Application Rejected?", "desc": "Understand what happened next" },
+    "guide": { "title": "Find My Registration Date", "desc": "See when your information was added" },
+    "assistant": { "title": "Talk to Assistant", "desc": "Get friendly step-by-step help" }
+  },
+  "validator": {
+    "pageTitle": "Validate my registration information",
+    "pageSubtitle": "We'll check your details look right before you send your SMS. This does not send anything or contact the government.",
+    "labelRegNumber": "Vehicle registration number",
+    "placeholderRegNumber": "e.g. LEA-21-1234",
+    "labelRegDate": "Registration date",
+    "labelProvince": "Province",
+    "selectProvince": "Select your province",
+    "submit": "Check my details",
+    "checking": "Checking…",
+    "successTitle": "Looks good",
+    "successBody": "Your details match the expected format for {{province}}.",
+    "errorTitle": "A few things to fix",
+    "suggestionsTitle": "How to fix this",
+    "normalizedTitle": "Tidied-up version",
+    "recentTitle": "Your recent checks",
+    "recentEmpty": "You haven't checked anything yet. Your results will appear here.",
+    "clearHistory": "Clear history",
+    "errors": {
+      "regNumberRequired": "Please enter your vehicle registration number.",
+      "regNumberFormat": "That doesn't look like a {{province}} registration number yet. Expected something like {{example}}.",
+      "regDateRequired": "Please enter your registration date.",
+      "regDateFuture": "This date is in the future — please check your registration book again.",
+      "provinceRequired": "Please choose the province on your registration book."
+    }
+  },
+  "eligibility": {
+    "pageTitle": "Am I eligible?",
+    "pageSubtitle": "Answer three quick questions. This is an estimate based on public rules — not a final decision.",
+    "labelVehicleType": "Vehicle type",
+    "labelEngineCapacity": "Engine capacity (cc)",
+    "placeholderEngineCapacity": "e.g. 125",
+    "labelProvince": "Province",
+    "submit": "Check eligibility",
+    "vehicleTypes": {
+      "motorcycle": "Motorcycle / scooter",
+      "car": "Car",
+      "rickshaw": "Rickshaw / auto",
+      "van": "Van / pickup"
+    },
+    "outcomes": {
+      "eligible": "You may be eligible",
+      "notEligible": "You may not be eligible",
+      "undetermined": "We can't tell yet"
+    },
+    "outcomeBody": {
+      "eligible": "Based on the public rules for {{province}}, vehicles like yours are usually included. Final confirmation always comes from the government system.",
+      "notEligible": "Based on the public rules for {{province}}, this vehicle type doesn't usually qualify. Rules can change, so it's still worth trying.",
+      "undetermined": "We don't have a published rule that matches this combination yet. Try the AI Assistant, or check back after an official update."
+    },
+    "disclaimer": "This is only an estimate from public information. The government system makes the final decision.",
+    "recentTitle": "Your recent checks",
+    "recentEmpty": "No eligibility checks yet. Your results will appear here."
+  },
+  "rejection": {
+    "pageTitle": "Why was my application rejected?",
+    "pageSubtitle": "Choose the message closest to what you received.",
+    "selectLabel": "Rejection message",
+    "selectPlaceholder": "Choose a message",
+    "causeLabel": "Possible cause",
+    "explanationLabel": "What this means",
+    "resolutionLabel": "What you can try",
+    "reasons": {
+      "vehicleNotFound": {
+        "title": "Vehicle Not Found",
+        "cause": "The registration number entered doesn't match any record the system recognises.",
+        "explanation": "This usually happens when a letter, number or dash is slightly off, or the vehicle was registered very recently.",
+        "resolution": "Use the Validator tool to check your format, compare it carefully with your registration book, and try again."
+      },
+      "simCnicMismatch": {
+        "title": "SIM CNIC Mismatch",
+        "cause": "The CNIC linked to the SIM you used doesn't match the CNIC on file for the application.",
+        "explanation": "Mobile networks register each SIM to one CNIC. If you're using someone else's SIM, the names won't line up.",
+        "resolution": "Send the SMS from a SIM registered in your own name, or ask the SIM owner to apply using their own details."
+      },
+      "alreadyRegistered": {
+        "title": "Already Registered",
+        "cause": "This vehicle has already been registered for this relief cycle.",
+        "explanation": "Sending the SMS more than once does not create duplicate registrations — the system keeps only the first one.",
+        "resolution": "No action needed. If you believe this is wrong, contact the official helpline from the Contact page."
+      },
+      "invalidRegNumber": {
+        "title": "Invalid Registration Number",
+        "cause": "The format of the registration number doesn't match what the system expects for your province.",
+        "explanation": "Each province has its own plate pattern. A missing dash or extra space is a common cause.",
+        "resolution": "Check the Province Guide for an example from your province, then try again with the corrected format."
+      }
+    },
+    "recentNote": "Still stuck? Open the AI Assistant and describe exactly what the SMS reply said."
+  },
+  "guide": {
+    "pageTitle": "Find my registration date",
+    "pageSubtitle": "Your registration date is printed on your vehicle registration book. Pick your province to see where to look.",
+    "viewGuide": "View this guide",
+    "recentlyViewed": "Recently viewed",
+    "recentlyViewedEmpty": "Open a province guide to see it here next time.",
+    "stepsTitle": "Steps",
+    "provinces": {
+      "punjab": {
+        "name": "Punjab",
+        "plateExample": "LEA-21-1234",
+        "dateLocation": "Printed on the first inside page, next to \"Date of Registration\".",
+        "steps": [
+          "Open your vehicle registration book to the first page.",
+          "Look for the field labelled \"Date of Registration\" near the top.",
+          "The date is written as DD-MM-YYYY.",
+          "If the page is faded, check the excise office stamp — the date is usually repeated there."
+        ]
+      },
+      "sindh": {
+        "name": "Sindh",
+        "plateExample": "KHI-2021-A1",
+        "dateLocation": "Found on the particulars page, under \"Registration Date\".",
+        "steps": [
+          "Open the book to the particulars page (usually page 2).",
+          "Find \"Registration Date\" in the left-hand column.",
+          "Note the date exactly as printed, including the year.",
+          "Older books may show the date in the top-right stamp instead."
+        ]
+      },
+      "kpk": {
+        "name": "Khyber Pakhtunkhwa",
+        "plateExample": "PE-4521",
+        "dateLocation": "Listed under \"Tareekh-e-Register\" near the vehicle details box.",
+        "steps": [
+          "Open to the vehicle details box on the first page.",
+          "Find the Urdu/English bilingual line for registration date.",
+          "Convert the date to DD-MM-YYYY format if needed.",
+          "Keep the book handy — some offices ask for a photo of this page."
+        ]
+      },
+      "balochistan": {
+        "name": "Balochistan",
+        "plateExample": "BA-7788",
+        "dateLocation": "Printed beside the owner's details on the inside cover.",
+        "steps": [
+          "Open the inside front cover.",
+          "The registration date sits beside the owner's name and CNIC.",
+          "Double-check the year — books printed near a year-end are easy to misread.",
+          "If unclear, the excise receipt kept with the book usually has the same date."
+        ]
+      },
+      "islamabad": {
+        "name": "Islamabad",
+        "plateExample": "ICT-9981",
+        "dateLocation": "Shown on the smart card, or the booklet for older registrations.",
+        "steps": [
+          "If you have a smart card, the date is on the back, bottom row.",
+          "If you have the older booklet, check the first printed page.",
+          "The format is DD-MM-YYYY.",
+          "Keep a copy of this number handy before using the Validator tool."
+        ]
+      }
+    }
+  },
+  "assistant": {
+    "pageTitle": "Talk to the assistant",
+    "pageSubtitle": "Ask anything about registration, eligibility or a rejection message. Type, or use Speak.",
+    "greeting": "Let's take it one question at a time.",
+    "selectedNote": "You selected: Talk to Assistant. You can type, speak, or simply listen.",
+    "firstQuestionPrompt": "What would you like to know first?",
+    "placeholder": "Type a short question…",
+    "speak": "Speak",
+    "listen": "Listen",
+    "clearChat": "Clear conversation",
+    "emptyState": "No messages yet. Ask your first question below.",
+    "disclaimer": "I can only give guidance from public information. I can't check your application status or access any government database.",
+    "quickQuestions": [
+      "What can Fuel Relief Assistant help me with?",
+      "What information should I keep ready?",
+      "Can I use this service on my phone?",
+      "Is this an official government website?"
+    ],
+    "quickAnswers": [
+      "I can help you check your registration format, understand rejection messages, estimate eligibility, and find your registration date — all in plain language.",
+      "Keep your vehicle registration book and the province it was issued in ready. You won't need your CNIC here.",
+      "Yes. This help desk is designed for phones, slow connections, and people using the internet for the first time.",
+      "No. Fuel Relief Assistant Pakistan is an independent guidance tool. It is not affiliated with the Government of Pakistan and cannot access official records."
+    ],
+    "fallbackAnswer": "I don't have a confirmed answer for that yet. Try the Validator, Eligibility Checker or Rejection Help tools, or check the FAQs page — a real answer is better than a guess."
+  },
+  "faq": {
+    "pageTitle": "Frequently asked questions",
+    "pageSubtitle": "Search for a quick answer, or browse everything below.",
+    "searchPlaceholder": "Search common questions",
+    "recentSearches": "Recent searches",
+    "noResults": "No questions matched \"{{query}}\". Try different words, or ask the AI Assistant.",
+    "items": {
+      "help": {
+        "q": "What can Fuel Relief Assistant help me with?",
+        "a": "Checking your registration details, understanding rejection messages, estimating eligibility, and finding your registration date — explained in plain language."
+      },
+      "ready": {
+        "q": "What information should I keep ready?",
+        "a": "Your vehicle registration book and the province it was issued in. You do not need to share your CNIC with this platform."
+      },
+      "phone": {
+        "q": "Can I use this service on my phone?",
+        "a": "Yes. This help desk is designed for phones, slow connections, and people using the internet for the first time."
+      },
+      "official": {
+        "q": "Is this an official government website?",
+        "a": "No. This platform provides guidance only. It is not connected to official government databases and cannot register you."
+      },
+      "data": {
+        "q": "Does this platform store my personal information?",
+        "a": "Your checks and chats are saved only on your own device, in your browser. Nothing is uploaded to a server."
+      },
+      "wrong": {
+        "q": "What if my registration is rejected after I use this tool?",
+        "a": "Open the Rejection Help page and select the message you received, or contact the official helpline on the Contact page."
+      }
+    }
+  },
+  "contact": {
+    "pageTitle": "Complaint & support center",
+    "pageSubtitle": "If this platform's tools can't resolve your issue, here is how to reach official channels.",
+    "helplineLabel": "Official helpline",
+    "emailLabel": "Official email",
+    "processTitle": "Suggested support process",
+    "processSteps": [
+      "Re-check your format using the Validator tool.",
+      "Read the explanation on the Rejection Help page.",
+      "Wait a few minutes and try sending the SMS again.",
+      "If it still fails, contact the official helpline with your registration book ready."
+    ],
+    "escalationTitle": "If the helpline can't resolve it",
+    "escalationBody": "Ask for a complaint reference number, and note the date and time of your call. Provincial citizen portals can also log complaints formally.",
+    "feedbackTitle": "Tell us about this platform",
+    "feedbackBody": "This form is for feedback on this guidance tool — not for official registration complaints.",
+    "feedbackPlaceholder": "What worked, or what didn't?",
+    "feedbackSubmit": "Send feedback",
+    "feedbackThanks": "Thank you — your feedback is saved on this device."
+  },
+  "footer": {
+    "tagline": "A calm, friendly place to understand your next step.",
+    "aboutPlatform": "About platform",
+    "privacyNotice": "Privacy notice",
+    "disclaimerLink": "Disclaimer",
+    "disclaimerLong": "This platform provides guidance only. It is not connected to official government databases.",
+    "madeFor": "Made for people, in the languages they use.",
+    "rights": "Fuel Relief Assistant Pakistan"
+  }
+}

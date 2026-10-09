@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-sand-50 text-ink-900 antialiased;
+  font-feature-settings: "ss01";
+}
+
+.dark body {
+  @apply bg-ink-950 text-sand-100;
+}
+
+/* Urdu / Pashto / Punjabi (Shahmukhi) use the Nastaliq face and read right to left */
+[dir="rtl"] body,
+.font-urdu {
+  font-family: "Noto Nastaliq Urdu", "Inter", system-ui, sans-serif;
+  line-height: 2.1;
+}
+
+::selection {
+  background-color: #9bd39e;
+  color: #0b2318;
+}
+
+.focus-ring {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-leaf-500 focus-visible:ring-offset-2 focus-visible:ring-offset-sand-50 dark:focus-visible:ring-offset-ink-950;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* thin scrollbar for the chat window */
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: rgba(79, 154, 92, 0.4);
+  border-radius: 999px;
+}
